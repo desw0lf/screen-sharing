@@ -44,7 +44,8 @@ export default function HostPage() {
                             onClick={async () => {
                                 try {
                                     const stream = await navigator.mediaDevices.getDisplayMedia({
-                                        video: true
+                                        video: true,
+                                        audio: true
                                     });
                                     setActiveStream(stream);
                                     const call = newPeer.call(conn.peer, stream);
