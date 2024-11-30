@@ -76,7 +76,7 @@ export default function JoinPage() {
 
     return (
         <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 p-8">
-            <div className="max-w-2xl mx-auto space-y-8">
+            <div className="mx-auto space-y-8" style={{ maxWidth: isConnected ? "1280px" : "42rem" }}>
                 <Button variant="outline" onClick={() => router.push("/")} className="flex items-center gap-2">
                     <ArrowLeft className="h-4 w-4" />
                     Back to Home
